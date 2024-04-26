@@ -36,11 +36,23 @@
         </div>
 
         <!-- Hamburger Button -->
-
+        <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
 
       <!-- Mobile Menu -->
-
+      <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+        <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+          <a href="#" class="w-full text-center">Features</a>
+          <a href="#" class="w-full text-center">Pricing</a>
+          <a href="#" class="w-full text-center">Resources</a>
+          <a href="#" class="w-full pt-6 border-t border-gray-400 text-center">Login</a>
+          <a href="#" class="w-full py-3 text-center rounded-full bg-cyan">Sign Up</a>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
@@ -99,6 +111,68 @@
             <div class="font-bold text-cyan">https://rel.ink/gob3X9</div>
             <button class="p-2 px-8 text-white bg-cyan rounded-lg hover:opacity-70 focus:outline-none">Copy</button>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-24 bg-gray-100">
+      <div class="container mx-auto px-3">
+        <h2 class="text-4xl mb-6 font-bold text-center">Advanced Statistics</h2>
+        <p class="max-w-xs mx-auto text-center text-gray-400 md:max-w-md">
+          Track how your links are performing across the web with our advanced statistics dashboard.
+        </p>
+      </div>
+    </section>
+
+    <!-- Feature Box Section -->
+    <section id="features" class="pb-32 bg-gray-100">
+      <div class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
+        <!-- Horizontal Line (just for larger screens) -->
+        <div class="hidden absolute top-24 left-16 h-3 w-10/12 bg-cyan md:block"></div> <!-- hidden and md:block to show only on larger screens -->
+        <!-- Vertical Line (just for smaller screens) -->
+        <div class="absolute w-2 left-1/2 h-full -ml-1 bg-cyan md:hidden"></div>  <!-- md:hidden to show only on smaller screens - -ml-1 to have the line in the middle (w-2 left-1/2) -->
+        <!-- Box 1 -->
+        <div class="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
+          <!-- Image Positioning -->
+          <div class="absolute left-1/2 -ml-10 -top-10 md:left-16">
+            <!-- Image Container For Background & Center -->
+            <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+              <img src="images/icon-brand-recognition.svg" alt="" />
+            </div>
+          </div>
+          <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">Brand Recognition</h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <!-- Box 2 -->
+        <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-8 md:w-1/3"> <!-- mt-24 to have enought space between box 1 and 2 with its offsetted img - md:mt-8 to offset the whole box (cascaded) -->
+          <!-- Image Positioning -->
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <!-- Image Container For Background & Center -->
+            <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+              <img src="images/icon-detailed-records.svg" alt="" />
+            </div>
+          </div>
+          <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">Detailed records</h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <!-- Box 3 -->
+        <div class="relative flex flex-col mt-24 p-6 space-y-6 bg-white rounded-lg md:mt-16 md:w-1/3">  <!-- mt-24 to have enought space between box 1 and 2 with its offsetted img - md:mt-16 to offset the whole box (cascaded) -->
+          <!-- Image Positioning -->
+          <div class="absolute -ml-10 left-1/2 -top-10 md:left-16">
+            <!-- Image Container For Background & Center -->
+            <div class="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-veryDarkViolet">
+              <img src="images/icon-fully-customizable.svg" alt="" />
+            </div>
+          </div>
+          <h5 class="pt-6 text-xl font-bold text-center capitalize md:text-left">Fully customizable</h5>
+          <p class="text-center text-gray-400 md:text-left">
+            Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+          </p>
         </div>
       </div>
     </section>
